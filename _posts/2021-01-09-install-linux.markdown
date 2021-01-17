@@ -27,16 +27,14 @@ tag: linux, ubuntu
   - Msg: your host does not meet minimum requirements to run vmware player with hyper-v or device/credential guard enabled. refer to vmware kb article 76918
   - [해결방법은 두 가지](https://moonlight-spot.tistory.com/entry/VMware-15-player-%EC%84%A4%EC%B9%98-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0-error-Your-host-does-not-meet-minimum-requirements-to-run-VMware-workstation-with-hyper-v-or-devicecredential-guard-enabled-76918)
 
-        - 1.  ~~Update Windows Viersion~~
-        - 2.  Off the Hyper-V **(what I choose)**
+    - 1.  ~~Update Windows Viersion~~
+    - 2.  Off the Hyper-V **(what I choose)**
 
-        ![cs02_02](https://user-images.githubusercontent.com/70361152/104014581-9d6e7a80-51f6-11eb-89f4-d41b575c8b08.jpg)
-
-    )
+      ![cs02_02](https://user-images.githubusercontent.com/70361152/104014581-9d6e7a80-51f6-11eb-89f4-d41b575c8b08.jpg)
 
 - cmd에서 다시 시도
 
-  ```
+  ```shell
   $ bcdedit /set hypervisorlaunchtype off
   ```
 
@@ -54,7 +52,7 @@ tag: linux, ubuntu
 
 - SSH 키 쌍 만들기(PowerWhell)
 
-  ```
+  ```zsh
   ssh-keygen -m PEM -t rsa -b 4096
   ```
 
@@ -70,8 +68,8 @@ tag: linux, ubuntu
 - Windows Gate - VM Gate - Ubuntu Gate 정도를 거쳐야하지 않을까라고 예상
 - Install openssh-server in VM Ubuntu
 
-  ```
-  sudo apt-get install openssh-server
+  ```shell
+  $ sudo apt-get install openssh-server
   ```
 
   - ~~Ubuntu에 문이 열린건가.~~
@@ -81,7 +79,7 @@ tag: linux, ubuntu
     - Windows VMware에 설치된 Ubuntu의 ip주소
     - 서버가 있다고 가정했을 때, 원격으로 접속할 서버의 ip주소
 
-    ```
+    ```bash
     ifconfig
     ```
 
@@ -146,7 +144,7 @@ tag: linux, ubuntu
   - [오늘 찾아본 링크 중에 가장 설명이 쉽게 잘 되어있는 글 같다.](https://velog.io/@younho9/Mac-%EB%B2%84%EC%B6%94%EC%96%BC%EB%B0%95%EC%8A%A4VirtualBox%EC%97%90-%EC%84%A4%EC%B9%98%EB%90%9C-%EC%9A%B0%EB%B6%84%ED%88%ACUbuntu-%EB%A7%A5-%ED%84%B0%EB%AF%B8%EB%84%90%EC%97%90%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0)
   - 저녁식사 후 잠시 머리 좀 식힐겸 슬랙에서 다른 사람들 질문과 해결방법을 찾아봤는데, Windows보다는 iOS 상황에서의 자료가 훨씬 더 친절한 것 같은 기분이 드는건 남의 떡이 커보이는 걸까.
 
-## 6. Root 계정 외에 ~~Raccoon~~Juddroid이 접속할 계정 만들기
+## 6. Root 계정 외에 ~~Raccoon~~Juddroid가 접속할 계정 만들기
 
 - 아 이게 아까 했던거였음
 
@@ -159,8 +157,8 @@ tag: linux, ubuntu
 - [공개키와 비밀키](http://blog.naver.com/PostView.nhn?blogId=chodahi&logNo=221385524980)
 - 처음에 하려고 했던 방법으로도 Ubuntu에 접속이 된다.
 
-  ```
-  ssh -i ~/.ssh/raccoon_rsa.pub raccoon@192.168.49.128
+  ```shell
+  $ ssh -i ~/.ssh/raccoon_rsa.pub raccoon@192.168.49.128
   ```
 
   - 이게 공개키로 접속하는 것 같다. [-i identity_file]가 뭔지 알아봐야되겠다.

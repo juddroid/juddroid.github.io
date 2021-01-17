@@ -90,9 +90,7 @@ tag: shell, ssh, ssl
 
     - 모든 sh 가 /bin/bash 를 가리키도록 해봄 (오류가 남)
 
-      ```
-      Too many levels of symbolic links
-      ```
+      > Too many levels of symbolic links
 
     - 다시 sh 를 삭제한 후에 한 개만 연결해 봤더니 일단 sh 가 작동함
 
@@ -168,7 +166,7 @@ tag: shell, ssh, ssl
 - **아무리 생각해도 폴더를 새로 만들지 않고, 파일만 가져올 방법이 생각이 안난다.**
 - 처음 방법대로 폴더를 만들어서 파일을 찾으면 복사를 하는 방법으로 돌아가야겠다.
 
-  ```
+  ```sh
   #!/bin/bash
 
   FOLDER_SIZE=`ls -l cs-02 | grep ^d | wc -l`
