@@ -165,7 +165,7 @@ tag: linux, ubuntu
   - [SSH 명령어](https://wlsvud84.tistory.com/12)
   - [간단하게 자주 사용하는 SSH 명령어 정리](https://falsy.me/%EA%B0%84%EB%8B%A8%ED%95%98%EA%B2%8C-%EC%9E%90%EC%A3%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-ssh-%EB%AA%85%EB%A0%B9%EC%96%B4%EB%A5%BC-%EC%A0%95%EB%A6%AC%ED%95%A9%EB%8B%88%EB%8B%A4/)
 
-  ```
+  ```shell
   ssh raccoon@192.168.49.128
   ```
 
@@ -190,21 +190,26 @@ tag: linux, ubuntu
 
 - **/backup 디렉토리 생성하기**
 
-  ```
-  sudo mkdir /backup
+  ```bash
+  $ sudo mkdir /backup
   ```
 
   ![cs02_18](https://user-images.githubusercontent.com/70361152/104014958-40bf8f80-51f7-11eb-91dd-8d0c83b42bf6.jpg)
 
 - raccoon은 sudo 권한이 있는데, juddroid는 sudo 권한이 없다.
 - 일단 root권한
-  ```
+
+  ```bash
   su
+
   ```
+
 - sudoers 찾아가기
+
+  ```zsh
+  $ vi /etc/sudoers
   ```
-  vi /etc/sudoers
-  ```
+
 - sudoers에게 나도 권한 달라고하기
   ![cs02_19](https://user-images.githubusercontent.com/70361152/104014959-40bf8f80-51f7-11eb-990a-7948fd2fc4db.jpg)
 
@@ -223,7 +228,7 @@ tag: linux, ubuntu
   - (764) 소유자: 7 / 그룹: 읽기, 쓰기 / 그 외: 읽기
   - 그룹 유저는 실행권한이 없어지고, 쓰기 권한이 생긴다.
 
-    ```
+    ```zsh
     sudo chmod 764 backup
     ```
 
