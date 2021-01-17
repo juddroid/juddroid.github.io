@@ -59,7 +59,7 @@
       {% capture url %}
         {%- if entry.type == 'github' -%}
           https://github.com/{{ site.github.username }}
-        {%- elsif entry.type == 'twitter' -%}
+        {%- elsif entry.type == 'instagram' -%}
           https://instagram.com/{{ site.instagram.username }}
         {%- elsif entry.type == 'email' -%}
           {% assign email = site.social.email | split: '@' %}
