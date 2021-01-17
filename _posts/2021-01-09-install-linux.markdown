@@ -1,7 +1,7 @@
 ---
-layout: post
 title: "Install Linux"
-categories: jekyll update
+categories: Digging cs
+tag: linux, ubuntu
 ---
 
 # Linux 설치 도전기

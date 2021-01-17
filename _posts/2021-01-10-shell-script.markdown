@@ -1,7 +1,7 @@
 ---
-layout: post
 title: "Shell Script"
-categories: jekyll update
+categories: Digging cs
+tag: shell, ssh, ssl
 ---
 
 # Mission: Shell script 정복기

@@ -1,7 +1,7 @@
 ---
-layout: post
-title: 'testing post'
-categories: jekyll update
+title: "testing post"
+categories: etc
+tag: test, test1, test2
 ---
 
 test
