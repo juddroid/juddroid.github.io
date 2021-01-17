@@ -11,9 +11,9 @@ title: Raccoon # the main title
 tagline: Digging to the end of the Earth # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, raccoon, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  D I G G I N G
+  D I V V I N G
+  R A C C O O N
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://juddroid.github.io"
@@ -75,7 +75,7 @@ disqus:
 #
 #     dark   - Use the dark color scheme
 #
-theme_mode: [dark]
+theme_mode: [ligth|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
