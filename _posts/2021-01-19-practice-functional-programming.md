@@ -1,7 +1,7 @@
 ---
 title: "Practice Functional Programming"
 categories: Digging cs
-tag: functinal programming IIEF closure scope chain stream
+tag: functinal programming, IIEF, closure, scope chain, stream
 ---
 
 ## 정리
