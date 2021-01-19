@@ -11,7 +11,7 @@ tag: [ruby, rbenv, gem, jkeyll]
 지난 주말 `jekyll` 에 `theme` 한 번 입혀보겠다고, 밤을 지새웠다. <br> 배운 것과 생각을 정리하는 공간을 갖고 싶긴한데 개인적으로 갖추고 싶은 몇가지 조건이 있었다.
 
 1. `mark down`을 사용할 수 있을 것
-2. `theme` 가 충분하지만 `customaizing` 이 가능할 것
+2. `theme` 가 충분하지만 `customizing` 이 가능할 것
 3. `git`으로 관리할 수 있을 것
 4. 다른 블로그와 달리 쉽게 예쁠 수 있을 것
 
