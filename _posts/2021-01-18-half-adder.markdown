@@ -53,11 +53,3 @@ tag: [halfadder, and, or, not, sum, carry]
 #### - C: outputCarry
 
 #### - S: outputSum
-
-
-
-{% javascript %}
-
-const foo = 'string'
-
-{% endjavascript %}
