@@ -1,7 +1,7 @@
 ---
 title: "반가산기가 뭘까"
 categories: Digging cs
-tag: halfadder, and, or, not, sum, carry
+tag: [halfadder, and, or, not, sum, carry]
 ---
 
 ### 1. [반가산기(Half adder)](https://ko.wikipedia.org/wiki/%EA%B0%80%EC%82%B0%EA%B8%B0)가 뭘까

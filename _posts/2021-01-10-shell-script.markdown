@@ -1,7 +1,7 @@
 ---
 title: "Shell Script"
 categories: Digging cs
-tag: shell, ssh, ssl
+tag: [shell, ssh, ssl]
 ---
 
 # Mission: Shell script 정복기

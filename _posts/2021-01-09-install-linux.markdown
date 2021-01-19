@@ -1,7 +1,7 @@
 ---
 title: "Install Linux"
 categories: Digging cs
-tag: linux, ubuntu
+tag: [linux, ubuntu]
 ---
 
 # Linux 설치 도전기
