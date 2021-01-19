@@ -15,7 +15,7 @@ Object - {{ }} - output
 site variables
 
 site.time
-site.pages
+{{site.pages}}
 
 site.title
 site.description
