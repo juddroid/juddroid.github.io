@@ -1,6 +1,7 @@
 ---
 title: "다시 풀어보는 알고리즘(feat. 프로그래머스)"
-categories: Digging Algorithm
+date: 2021-01-20-20:00:00
+categories: [Digging, Algorithm]
 tag: [algorithm, programmers]
 ---
 
@@ -568,7 +569,6 @@ function test() {
 test();
 ```
 
-</details>
 <br>
 
 #### 기존 풀이와 비교

@@ -1,6 +1,6 @@
 ---
 title: "Bundler exec jekyll serve is not working"
-categories: Digging Digging
+categories: [Digging, Digging]
 tag: [ruby, rbenv, gem, jkeyll]
 ---
 
