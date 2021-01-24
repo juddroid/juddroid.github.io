@@ -1,6 +1,6 @@
 ---
-title: "Shell Script"
-categories: Digging cs
+title: "[CS] Shell Script"
+categories: [Digging, Computer Science]
 tag: [shell, ssh, ssl]
 ---
 
@@ -275,15 +275,17 @@ tag: [shell, ssh, ssl]
   ### 4-1. 권한설정문제(chmod, chown)
 
   - Goal
+    
     - cs-02.sh 에서 zip 파일을 juddroid 계정으로 접속하여 ubuntu:/backup 에 `scp` 하기
   - Error Msg
-    - Permission denied
+    
+  - Permission denied
   - Situation
 
     - ubuntu:/backup chmod (764)
-
+  
       ```
-      drwxrw-r--  2 root root
+    drwxrw-r--  2 root root
       ```
 
     - juddroid는 group user
@@ -293,9 +295,9 @@ tag: [shell, ssh, ssl]
     1. Change chown
 
        - /backup 소유자를 root에서 juddroid로 변경
-
+  
          ```
-         sudo chown :juddroid /backup
+       sudo chown :juddroid /backup
          ```
 
        - **Result: Fail**
@@ -303,94 +305,96 @@ tag: [shell, ssh, ssl]
     2. Change chmod(Solve)
 
        - 최대한 764에서 해결해보려고 했으나 실패했으므로 775로 변경
-
+  
          ```
-         sudo chmod 775 /backup
+       sudo chmod 775 /backup
          ```
-
-       - **Result: Solve**
+  
+     - **Result: Solve**
        - 파일을 `read`해서 `write`하면되기 때문에 6으로도 가능할거라고 생각했는데, 복사할 때, **폴더를 살행해서 읽고 써야하는건지(?)**, 775로 바꾸니 해결됨
 
   - **SOLVED**
 
   ### 4-2. SSH key를 이용한 자동로그인 실패
-
+  
   - Goal
+    
     - SSH key를 이용해서 비밀번호 입력없이 자동로그인 하기
-  - Error Msg
-    - ch-02.sh 파일이 실행됐을 때, 비밀번호를 물어보지 않고, 바로 복사돼야 하는데 비밀번호를 묻고 있음
+- Error Msg
+  
+  - ch-02.sh 파일이 실행됐을 때, 비밀번호를 물어보지 않고, 바로 복사돼야 하는데 비밀번호를 묻고 있음
   - Situation
-
+  
     - 원격지(192.168.32.128):/home/raccoon/.ssh/ 에 공용키 복사
 
       ```
-      ssh-copy-id -i ~/.ssh/id_rsa.pub 192.168.32.128
+    ssh-copy-id -i ~/.ssh/id_rsa.pub 192.168.32.128
       ```
 
     - 원격지에서 /home/raccoon/.ssh/authorized keys 파일 생성 확인
 
   - Try
-
+  
     1. 공개키로 시도
 
        ```
-       ssh -i ~/.ssh/id_rsa.pub raccoon@192.168.32.128
+     ssh -i ~/.ssh/id_rsa.pub raccoon@192.168.32.128
        ```
-
-    - Error
-
-      - Msg:
+  
+  - Error
+  
+    - Msg:
         ![image](https://user-images.githubusercontent.com/70361152/104128385-9b4d1d00-53aa-11eb-83eb-eee17f0b6bbe.png)
 
         - 무시당함
 
       - **Result: Fail**
-
+  
     2. 위 결과에 따라서 키쌍은 읽기 권한만 있으면 될 것 같아서 chmod를 400으로 변경
-
-       ```
+  
+     ```
        sudo chmod 400 id_rsa.pub
-       sudo chmod 400 id_rsa
-       ```
+     sudo chmod 400 id_rsa
+     ```
 
        - Error
-
+  
          - msg:
 
            ```
-           Load key "/home/raccoon/.ssh/id_rsa.pub": invalid format
+         Load key "/home/raccoon/.ssh/id_rsa.pub": invalid format
            ```
 
        - **Result = Fail**
-
-    3. ssh -i 옵션 확인
-
+  
+  3. ssh -i 옵션 확인
+  
        ![image](https://user-images.githubusercontent.com/70361152/104128687-69d55100-53ac-11eb-967a-01decdb59e7d.png)
        ![image](https://user-images.githubusercontent.com/70361152/104128830-24fdea00-53ad-11eb-8745-eb4681b8a95e.png)
 
        ```
        Selects a file from which the identity (private key) for public key authentication is read.
-       ```
-
-       - 충격적이게도 `identity`는 `public key`가 아니라 `private key`였다.
+     ```
+  
+     - 충격적이게도 `identity`는 `public key`가 아니라 `private key`였다.
        - 하루를 날린 ssl에 대해서 다시 공부...
-
+  
     - -i 옵션에 `private key`를 넣어서 다시 시도
 
       ```
       ssh -i ~/.ssh/id_rsa raccoon@192.168.32.128
       ```
-
-      ![image](https://user-images.githubusercontent.com/70361152/104128972-cbe28600-53ad-11eb-8b0d-cebef9ebb736.png)
-
+  
+    ![image](https://user-images.githubusercontent.com/70361152/104128972-cbe28600-53ad-11eb-8b0d-cebef9ebb736.png)
+  
     - 바로 로그인이 됐다.
     - 이제 `scp`로 시큐어 카피 시도.
 
       ```
       scp backup_20210109.zip juddroid@192.168.32.128:/backup
       ```
-
-    - 여전히 비밀번호를 물어본다.
+  
+  - 여전히 비밀번호를 물어본다.
     - `raccoon`으로는 자동로그인이 되는데 `juddroid`로는 안된다.
     - `juddroid`는 키가 없다...
     - `juddroid`를 위한 키쌍 생성
@@ -402,52 +406,58 @@ tag: [shell, ssh, ssl]
       ```
       Enter file in which to save the key (/home/raccoon/.ssh/id_rsa):
       ```
-
-    - 그냥 `Enter`치면 현재 `pwd`에 생성된다.
+  ```
+    
+  ```
+  
+  - 그냥 `Enter`치면 현재 `pwd`에 생성된다.
     - `juddroid_rsa`를 생성해주고, 비밀번호 입력
-
-      ![image](https://user-images.githubusercontent.com/70361152/104129386-760edd80-53af-11eb-8267-da2fa933904f.png)
+  
+    ![image](https://user-images.githubusercontent.com/70361152/104129386-760edd80-53af-11eb-8267-da2fa933904f.png)
 
     - 키쌍생성
     - 공개키 복사
-
+  
       ```
        ssh-copy-id -i ~/.ssh/juddroid_rsa juddroid@192.168.32.128
       ```
-
+  ```
+    
     - 복사 확인
-      ![Screenshot from 2021-01-11 01-52-59](https://user-images.githubusercontent.com/70361152/104129590-dc93fb80-53af-11eb-96a6-fab6eb495c6f.jpg)
-
-    - scp 다시 시도
+  ![Screenshot from 2021-01-11 01-52-59](https://user-images.githubusercontent.com/70361152/104129590-dc93fb80-53af-11eb-96a6-fab6eb495c6f.jpg)
+  ```
+  
+  - scp 다시 시도
     - 실패(비번 물어봄. 그런데 이번에는 좀 다르다.)
-
+  
       - msg:
-
+  
         ```
         Enter passphrase for key '/home/raccoon/.ssh/juddroid_rsa':
         ```
-
-    - [`passphrase`에한 글 발견](https://arsviator.blogspot.com/2015/04/ssh-ssh-key.html)
+  
+  - [`passphrase`에한 글 발견](https://arsviator.blogspot.com/2015/04/ssh-ssh-key.html)
+    
       - `passphrase`는 옵션이고, 로컬에서 `private key`를 해석할 때만 사용함
     - `linux` 상에서 모든 `password`를 테스트용으로 똑같이 했더니 `passphrase`와 `password`도 똑같아서 원인을 찾는데 굉장히 오래걸림
-    - `juddroid_rsa`의 `passphrase`를 공백 `Enter`로 변경
-
-      ```
+- `juddroid_rsa`의 `passphrase`를 공백 `Enter`로 변경
+  
+    ```
       ssh-keygen -p -f ~/.ssh/juddroid_rsa
-      ```
-
-      ![image](https://user-images.githubusercontent.com/70361152/104129814-3fd25d80-53b1-11eb-84e8-a3da9e74338f.png)
-
-    - cs-02.sh 파일 수정
-
-      ```
+  ```
+  
+    ![image](https://user-images.githubusercontent.com/70361152/104129814-3fd25d80-53b1-11eb-84e8-a3da9e74338f.png)
+  
+- cs-02.sh 파일 수정
+  
+    ```
       scp -i ~/.ssh/juddroid_rsa "backup_$DATE.zip" juddroid@192.168.32.128:/backup
-      ```
-
-    - 실행
-
-      ![image](https://user-images.githubusercontent.com/70361152/104130174-aa37cd80-53b2-11eb-9aea-5eb45bb52338.png)
-
-    - **Result = True**
-
+  ```
+  
+- 실행
+  
+    ![image](https://user-images.githubusercontent.com/70361152/104130174-aa37cd80-53b2-11eb-9aea-5eb45bb52338.png)
+    
+  - **Result = True**
+    
       ![Screenshot from 2021-01-11 02-15-28](https://user-images.githubusercontent.com/70361152/104130234-ebc87880-53b2-11eb-88eb-c6866b50dabb.png)

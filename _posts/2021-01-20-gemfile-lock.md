@@ -1,5 +1,5 @@
 ---
-title: "Bundler exec jekyll serve is not working"
+title: "[Digging] Bundler exec jekyll serve is not working"
 categories: [Digging, Digging]
 tag: [ruby, rbenv, gem, jkeyll]
 ---

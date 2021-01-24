@@ -1,6 +1,6 @@
 ---
-title: "Practice Functional Programming"
-categories: Digging cs
+title: "[CS] Practice Functional Programming"
+categories: [Digging, Computer Science]
 tag: [functinal programming, IIEF, closure, scope chain, stream]
 ---
 

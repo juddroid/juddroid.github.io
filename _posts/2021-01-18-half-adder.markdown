@@ -1,6 +1,6 @@
 ---
-title: "반가산기가 뭘까"
-categories: Digging cs
+title: "[CS] 반가산기가 뭘까"
+categories: [Digging, Computer Science]
 tag: [halfadder, and, or, not, sum, carry]
 ---
 

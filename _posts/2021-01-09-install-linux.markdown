@@ -1,6 +1,6 @@
 ---
-title: "Install Linux"
-categories: Digging cs
+title: "[CS] Install Linux"
+categories: [Digging, Computer Science]
 tag: [linux, ubuntu]
 ---
 
@@ -108,38 +108,39 @@ tag: [linux, ubuntu]
     ![cs02_09](https://user-images.githubusercontent.com/70361152/104014946-3dc49f00-51f7-11eb-9d37-db1029977def.jpg)
 
   - ~~그런데 이건 PuTTY를 사용한거지 SSH를 이용한게 아닌 것 같음~~
+    
     - PuTTY를 통해 SSH로 VM Ubuntu에 접근한거라고 다시 이해하고 있다.
   - 다시...
-  - 길이 막혔는데, [young이 보내준 링크](https://studyforus.tistory.com/235)와 Neis의 몇 마디가 도움이 됐다. 고마워요 ㅠㅠ
-
+- 길이 막혔는데, [young이 보내준 링크](https://studyforus.tistory.com/235)와 Neis의 몇 마디가 도움이 됐다. 고마워요 ㅠㅠ
+  
   - [Ubuntu Root 계정 암호 설정 및 사용하기](https://studyforus.tistory.com/223)
-  - ~~엊그제 Windows를 홀랑 날려먹고, 다시 세팅하면서 shell 비밀번호를 설정했는데 그게 이거인지 몰랐음~~
-
+- ~~엊그제 Windows를 홀랑 날려먹고, 다시 세팅하면서 shell 비밀번호를 설정했는데 그게 이거인지 몰랐음~~
+  
     - 위에서 언급한 건 windows 환경에서 이고, ubuntud에서도 설정했어야 했다.
-    - 정확한 개념이 없는 상태에서 username을 전부 raccoon으로 했더니 굉장히 혼란스러웠다.
-
-    ![cs02_10](https://user-images.githubusercontent.com/70361152/104014947-3e5d3580-51f7-11eb-9a5b-f57486ffe884.jpg)
-
-  - SSH config파일 수정
-
+  - 정확한 개념이 없는 상태에서 username을 전부 raccoon으로 했더니 굉장히 혼란스러웠다.
+  
+  ![cs02_10](https://user-images.githubusercontent.com/70361152/104014947-3e5d3580-51f7-11eb-9a5b-f57486ffe884.jpg)
+  
+- SSH config파일 수정
+  
     - Ubuntu에서 수정했어야 했다.
-    - 방향키도 인정안하는 리얼 vi체험
-
-    ![cs02_11](https://user-images.githubusercontent.com/70361152/104014948-3e5d3580-51f7-11eb-8fd6-71bfc8319e3e.jpg)
-
+  - 방향키도 인정안하는 리얼 vi체험
+  
+  ![cs02_11](https://user-images.githubusercontent.com/70361152/104014948-3e5d3580-51f7-11eb-8fd6-71bfc8319e3e.jpg)
+  
   - 결국 또 PuTTY라는 걸로 접속해야 된다고 함
   - 도대체 PuTTY가 뭔데...
   - [Windows10 Tip: PuTTY가 더 이상 필요 없다! 내장 OpenSSH 클라이언트 설치하기](https://archwin.net/402)
   - [PuTTY](https://dololak.tistory.com/24) : 가상 단말기 프로그램
   - 논리적인 가상 단말기인데 접속방식으로는 Telnet, SSH, Rlogin
   - SSH(Secure SHell)는 Telnet의 보안강화버젼(패킷을 암호화함)
-  - 일단 windows, vm ubuntu 양쪽 모두 terminal을 통해서 여기저기 접근할 수 있는 것 같은데, 왜 필요한지 모르겠다. 다음 스텝을 진행해봐야 될 것 같다.
-
+- 일단 windows, vm ubuntu 양쪽 모두 terminal을 통해서 여기저기 접근할 수 있는 것 같은데, 왜 필요한지 모르겠다. 다음 스텝을 진행해봐야 될 것 같다.
+  
   - [우분투에 SSH server 설치하기](https://www.youtube.com/watch?v=ow-uAzvAkmU)
-  - 이 영상이 도움이 많이 됐다.
-
-    ![cs02_12](https://user-images.githubusercontent.com/70361152/104014949-3ef5cc00-51f7-11eb-8600-9d6ab7237a94.jpg)
-
+- 이 영상이 도움이 많이 됐다.
+  
+  ![cs02_12](https://user-images.githubusercontent.com/70361152/104014949-3ef5cc00-51f7-11eb-8600-9d6ab7237a94.jpg)
+  
   - 원하는 형태로 접속했다.
   - [오늘 찾아본 링크 중에 가장 설명이 쉽게 잘 되어있는 글 같다.](https://velog.io/@younho9/Mac-%EB%B2%84%EC%B6%94%EC%96%BC%EB%B0%95%EC%8A%A4VirtualBox%EC%97%90-%EC%84%A4%EC%B9%98%EB%90%9C-%EC%9A%B0%EB%B6%84%ED%88%ACUbuntu-%EB%A7%A5-%ED%84%B0%EB%AF%B8%EB%84%90%EC%97%90%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0)
   - 저녁식사 후 잠시 머리 좀 식힐겸 슬랙에서 다른 사람들 질문과 해결방법을 찾아봤는데, Windows보다는 iOS 상황에서의 자료가 훨씬 더 친절한 것 같은 기분이 드는건 남의 떡이 커보이는 걸까.
@@ -221,17 +222,18 @@ tag: [linux, ubuntu]
 - **764모드로 접근 권한 바꿔서, 사용해보기**
 
   - 764모드는 뭔가!
+    
     - [[Shell] chmod - 파일 및 폴더의 권한설정](https://nachwon.github.io/shell-chmod/)
   - 현재 backup 폴더 권한 확인(755)
     ![cs02_21](https://user-images.githubusercontent.com/70361152/104014963-41f0bc80-51f7-11eb-83a2-97b167b28b32.jpg)
   - (755) 소유자: 7 / 그룹: 읽기, 실행 / 그 외: 읽기, 실행
   - (764) 소유자: 7 / 그룹: 읽기, 쓰기 / 그 외: 읽기
-  - 그룹 유저는 실행권한이 없어지고, 쓰기 권한이 생긴다.
-
+- 그룹 유저는 실행권한이 없어지고, 쓰기 권한이 생긴다.
+  
     ```zsh
     sudo chmod 764 backup
-    ```
-
+  ```
+  
   - 변경된 것 확인(chmod는 root만 가능함을 확인)
     ![cs02_22](https://user-images.githubusercontent.com/70361152/104014964-41f0bc80-51f7-11eb-8b1b-5fd1777ad7fc.jpg)
 

@@ -1,6 +1,6 @@
 ---
-title: "일급함수(First-class function)? 함수에 급수가 있다니..."
-categories: Digging cs
+title: "[CS] 일급함수(First-class function)? 함수에 급수가 있다니..."
+categories: [Digging, Computer Science]
 tag: [functional programming, FP, closure, Fisrt-class function, pure function]
 ---
 

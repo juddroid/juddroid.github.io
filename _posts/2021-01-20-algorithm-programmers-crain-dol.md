@@ -1,5 +1,5 @@
 ---
-title: "다시 풀어보는 알고리즘(feat. 프로그래머스)"
+title: "[Algorithm] 다시 풀어보는 알고리즘(feat. 프로그래머스)"
 date: 2021-01-20-20:00:00
 categories: [Digging, Algorithm]
 tag: [algorithm, programmers]
