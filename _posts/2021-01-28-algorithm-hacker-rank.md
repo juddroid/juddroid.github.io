@@ -1,6 +1,6 @@
 ---
 title: "[Algorithm] Hacker Rank 와의 첫만남, 그리고...(feat.CodeForce)"
-date: 2021-01-28-06:15:00
+date: 2021-01-28-03:15:00
 categories: [Digging, Algorithm]
 tag: [Hacker Rank, Code Force, v8, d8, readline, nodejs, javascript]
 ---
