@@ -1,5 +1,5 @@
 ---
-title: "[CS] Data 백만개 어떻게 처리하지..(feat. bulk insert)"
+title: "[Digging] Data 백만개 어떻게 처리하지..(feat. bulk insert)"
 date: 2021-02-01-05:06:00
 categories: [Digging, Digging]
 tag: [mysql, bulk insert, database]
