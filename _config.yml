@@ -48,7 +48,7 @@ baseurl: ""
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Asia/Seoul
 
-google_analytics:
+google_analytics: "G-LCFZMM81K6"
   id: "" # Fill with your Google Analytics ID
   pv:
     # The Google Analytics pageviews switch.
