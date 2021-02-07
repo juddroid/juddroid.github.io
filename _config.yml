@@ -49,7 +49,7 @@ baseurl: ""
 timezone: Asia/Seoul
 
 google_analytics:
-  id: "" # Fill with your Google Analytics ID
+  id: "G-35DGNMXRP7" # Fill with your Google Analytics ID
   pv:
     # The Google Analytics pageviews switch.
     # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
@@ -188,3 +188,8 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+plugins: [..., jekyll-sitemap]
+
+gems:
+  - jekyll-sitemap
