@@ -2,7 +2,7 @@
 title: "[CS] Shell script 정복기(feat. 정복당함)"
 categories: [Digging, Computer Science]
 tag: [shell, ssh, ssl]
-publis: false
+published: false
 ---
 
 # 처음만난 Shell script
