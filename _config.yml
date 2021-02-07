@@ -188,8 +188,7 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+# plugins: [..., jekyll-sitemap]
 
-plugins: [..., jekyll-sitemap]
-
-gems:
-  - jekyll-sitemap
+# gems:
+#   - jekyll-sitemap
