@@ -2,9 +2,10 @@
 title: "[CS] Shell script 정복기(feat. 정복당함)"
 categories: [Digging, Computer Science]
 tag: [shell, ssh, ssl]
+publis: false
 ---
 
-# Mission: Shell script 정복기
+# 처음만난 Shell script
 
 - Shell Script를 한 번 본 후, 실습을 해보려고하니 너무 불편하고 안예쁨
 - 조금만! 예쁘게 만들어보기로 함
@@ -34,7 +35,7 @@ tag: [shell, ssh, ssl]
     - bash: 기능이 풍부함(로그인 쉘)
     - 세대교체에 따른 세대차이가 좀 있다고 이해하고 넘어감
 
-- 뭔지 알고만 넘어가려고 했던 **#!/bin/sh**가 말썽을 일으킴
+- 뭔지만 알고 넘어가려고 했던 **#!/bin/sh**가 말썽을 일으킴
 
   ![q_01](https://user-images.githubusercontent.com/70361152/104015416-f2f75700-51f7-11eb-9341-3846b367af65.JPG)
   ![q_02](https://user-images.githubusercontent.com/70361152/104015419-f38fed80-51f7-11eb-88a4-a2d465635cf4.JPG)
@@ -106,7 +107,9 @@ tag: [shell, ssh, ssl]
 
       ![cs02_28](https://user-images.githubusercontent.com/70361152/104014972-44531680-51f7-11eb-908e-f008a9e14b34.jpg)
 
-    - 왜 되는지 모르겠지만 일단 Shell script를 공부해야 하므로 다음 단계로 넘어가기로 함
+    - 왜 되는지 아직도 모르겠다... 정황상 심볼릭 링크가 내 예상과 다르게 다시 연결이 잘 된 것 같다.
+    
+      
 
 ## 1. 폴더 16개 만들기
 

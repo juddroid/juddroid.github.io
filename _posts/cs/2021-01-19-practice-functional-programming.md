@@ -2,6 +2,7 @@
 title: "[CS] Practice Functional Programming"
 categories: [Digging, Computer Science]
 tag: [functinal programming, IIEF, closure, scope chain, stream]
+published: false
 ---
 
 ## 정리
