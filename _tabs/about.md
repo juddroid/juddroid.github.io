@@ -26,7 +26,7 @@ order: 4
 
 ---
 
-##Photo
+## Photo
 
 ![DSC03549](https://user-images.githubusercontent.com/70361152/106779295-34114880-668a-11eb-8917-ab2d30448faa.jpg)
 
@@ -38,17 +38,19 @@ order: 4
 소중한 추억이 되는  
 그 순간들이 사랑스럽다.  
 
-![08220019](https://user-images.githubusercontent.com/70361152/106779288-32e01b80-668a-11eb-862f-46e28fd8ceda.jpg)
+| ![08220019](https://user-images.githubusercontent.com/70361152/106779288-32e01b80-668a-11eb-862f-46e28fd8ceda.jpg) |
+|:--:|
+| 응봉산 팔각정에서 |
 
-응봉산 팔각정에서
 
-![08220047](https://user-images.githubusercontent.com/70361152/106779289-32e01b80-668a-11eb-91ce-d0f2105c077d.jpg)
 
-해질녘 남산
+| ![08220047](https://user-images.githubusercontent.com/70361152/106779289-32e01b80-668a-11eb-91ce-d0f2105c077d.jpg) |
+|:--:|
+| 해질녘 남산 |
 
-![08120003](https://user-images.githubusercontent.com/70361152/106779280-31aeee80-668a-11eb-88db-3c053ea65e46.jpg)
-
-밤하늘의 별
+| ![08120003](https://user-images.githubusercontent.com/70361152/106779280-31aeee80-668a-11eb-88db-3c053ea65e46.jpg) |
+|:--:|
+| 밤하늘의 별 |
 
 ---
 
