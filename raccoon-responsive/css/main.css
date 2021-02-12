@@ -2,7 +2,7 @@ COMMON body {
 }
 
 .body__container {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #333;
@@ -29,7 +29,7 @@ a {
 }
 
 .btn:hover::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -59,7 +59,8 @@ a {
 
 .input--text:focus {
   border-color: #51a7e8;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
+    0 0 5px rgba(81, 167, 232, 0.5);
 }
 
 /* Vendor Prefix(실험적 기능) */
@@ -76,7 +77,7 @@ a {
 
 /* FLOAT CLEARFIX */
 .clearfix::after {
-  content: '';
+  content: "";
   clear: both;
   display: block;
 }
@@ -142,7 +143,7 @@ header .logo {
 }
 
 header .logo a {
-  background: url('../img/favicon/favicon-96x96.png');
+  background: url("https://github.com/juddroid/juddroid.github.io/blob/master/raccoon-responsive/img/favicon/favicon-96x96.png?raw=true");
   background-position: center;
   background-size: cover;
   width: 70px;
@@ -197,7 +198,7 @@ header .btn-group .light-mode {
   font-size: 14px;
 }
 
-#search + [type='submit'] {
+#search + [type="submit"] {
   display: none;
 }
 
@@ -219,14 +220,14 @@ header .sub-menu li a:hover {
 
 /* VISUAL */
 .section--visual {
-  background-image: url('../img/KakaoTalk_Photo_2016-08-13-15-44-15\ \(1\).jpg');
+  background-image: url("https://github.com/juddroid/juddroid.github.io/blob/master/raccoon-responsive/img/KakaoTalk_Photo_2016-08-13-15-44-15%20(1).jpg?raw=true");
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: cover;
 }
 
 .section--visual::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -283,7 +284,7 @@ header .sub-menu li a:hover {
   text-align: center;
 }
 
-#sign-form [type='submit'] {
+#sign-form [type="submit"] {
   width: 100%;
   height: 62px;
   padding: 0 25px;
