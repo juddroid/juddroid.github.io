@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Raccoon</title>
+
+    <meta name="author" content="RACCOON" />
+    <meta name="description" content="Diving Digging Raccoon" />
+
+    <!-- Setting for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimun-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- og: open graph 외부에 제공할 정보를 정의할 수 있음 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Raccoon" />
+    <meta property="og:description" content="Diving Digging Raccoon" />
+
+    <!-- Google Fonts 적용 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <!-- Reset.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="body__container">
+      <!-- HEADER -->
+      <header class="section">
+        <div class="inner clearfix">
+          <div class="menu-group float--left">
+            <div class="logo">
+              <a href="#">Raccoon</a>
+            </div>
+            <ul class="main-menu">
+              <li><a href="#">Personal</a></li>
+              <li><a href="#">Open source</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Explore</a></li>
+            </ul>
+          </div>
+          <div class="mode-group float--right">
+            <div class="btn-group">
+              <a href="#" class="btn light-mode">Light</a>
+              <a href="#" class="btn btn--primary dark-mode">Dark</a>
+            </div>
+            <form id="search-form" method="POST" action="">
+              <input type="text" id="search" class="input--text" placeholder="Search Raccoon" />
+              <input type="submit" value="Submit" />
+            </form>
+            <ul class="sub-menu">
+              <li><a href="#">Post</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Fun</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- VISUAL -->
+      <section class="section section--visual">
+        <div class="inner">
+          <div class="summary">
+            <h2 class="summary__title">그대 내 품에</h2>
+            <p class="summary__description">
+              <!-- br태그로 줄바꿈 하지 않고, paragraph를 묶어주는 방법으로 줄바꿈한다. -->
+              <!-- 그런데 왜 한글은 안될까... -->
+              별 헤는 밤이면 들려오는 그대의 음성<br />하얗게 부서지는 꽃가루 되어 그대 꽃위에 앉고 싶어라<br />밤하늘 보면서 느껴보는 그대의 숨결<br />두둥실 떠가는 쪽배를 타고 그대 호수에 머물고
+              싶어라
+            </p>
+          </div>
+          <form method="POST" id="sign-form" action="">
+            <ul>
+              <li><input type="text" class="input--text" placeholder="Pick a name" /></li>
+              <li><input type="email" class="input--text" placeholder="Your email address" /></li>
+              <li>
+                <input type="password" class="input--text" placeholder="Create a password" />
+                <p class="caption">Use at least one letter, one numeral, and seven characters.</p>
+              </li>
+              <li>
+                <button type="submit" class="btn btn--primary">Sign up for Raccoon</button>
+                <p class="caption">By clicking "Sign up for Raccoon", you agree to our terms of service and privacy policy. We'll occasionally send you account related emails.</p>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+
+      <!-- FEATURE -->
+      <section class="section section--feature">
+        <div class="summary">
+          <h2 class="summary__title">Let's dive!</h2>
+          <p class="summary__description">Endless sky, Deep sea, Digging to the end of the Earth with Raccoon!</p>
+        </div>
+        <div class="video">
+          <div class="video-ratio">
+            <iframe width="1905" height="800" src="https://www.youtube.com/embed/258cuifjPwY"></iframe>
+          </div>
+        </div>
+        <div class="tiles">
+          <div class="inner">
+            <ul>
+              <li>
+                <img src="../img/08220019.jpg" alt="hanriver" />
+                <h3>응봉산 팔각정</h3>
+                <p>사진 찍기가 좋아</p>
+              </li>
+              <li>
+                <img src="../img/08120013.jpg" alt="sky" />
+                <h3>밤하늘의 별</h3>
+                <p>밤하늘이 좋아</p>
+              </li>
+              <li>
+                <img src="../img/DSC09949.jpg" alt="jeju" />
+                <h3>제주도 바다</h3>
+                <p>바다가 좋아</p>
+              </li>
+              <li>
+                <img src="../img/DSC01356.JPG" alt="raccoon" />
+                <h3>판단판담 섬</h3>
+                <p>여행이 좋아</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
