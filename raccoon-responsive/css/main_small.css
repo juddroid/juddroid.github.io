@@ -1,0 +1,58 @@
+/* COMMON */
+.summary__title {
+  font-size: 34px;
+  /* font-size: 34px !important; */
+}
+
+.summary__description {
+  font-size: 16px;
+}
+
+/* FEATURE */
+
+.section--feature .tiles ul {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.section--feature .tiles li {
+  /* max-width: 100%; */
+  border-right: none;
+  border-bottom: 1px solid #e5e5e5;
+  /* padding-bottom: 20px; */
+}
+
+/* WHERE IS */
+#map {
+  /* width를 100%로 하면 margin이 잘못 적용됨 */
+  /* map만 여백을 없애준다. */
+  width: auto;
+  margin: 40px -20px 0 -20px;
+  border-left: none;
+  border-right: none;
+}
+
+/* PRICING */
+.section--pricing .card {
+  display: block;
+}
+.section--pricing .card .cell--description {
+  border-left: none;
+  border-top: 1px solid #e5e5e5;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer .site-links {
+  float: none;
+  text-align: center;
+  display: block;
+}
+
+footer .site-links:first-child {
+  margin-bottom: 20px;
+}
+
+footer .site-links li {
+  /* flex가 아닌 inline 적용 */
+  display: inline;
+}
