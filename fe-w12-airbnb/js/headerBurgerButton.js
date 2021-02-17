@@ -1,0 +1,28 @@
+(function (window, document) {
+  'use strict';
+
+  // Burger Button
+  const $burgerButton = document.querySelector('#user__button');
+  const $redCircle = document.querySelector('.red-circle');
+  const $burgerContainer = document.querySelector('.burger__container');
+
+  $burgerButton.addEventListener('click', openBurgerBox);
+  window.addEventListener('click', closeBurgerBox);
+
+  function openBurgerBox() {
+    $burgerContainer.classList.remove('visible--hidden');
+    $redCircle.classList.add('visible--hidden');
+  }
+
+  function closeBurgerBox(e) {
+    // if ($burgerContainer.classList.contains('visible--hidden') && e.path.includes($burgerButton)) return;
+    // console.log($burgerContainer.classList);
+    // if (!$burgerContainer.classList.contains('visible--hidden') && e.path.includes($burgerButton)) {
+    //   $burgerContainer.classList.add('visible--hidden');
+    //   console.log('here');
+    // }
+    if (e.path.includes($burgerButton)) return;
+    if (e.path.includes($burgerContainer)) return;
+    $burgerContainer.classList.add('visible--hidden');
+  }
+})(window, document);
