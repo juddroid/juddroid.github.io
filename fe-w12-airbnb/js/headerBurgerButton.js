@@ -10,17 +10,11 @@
   window.addEventListener('click', closeBurgerBox);
 
   function openBurgerBox() {
-    $burgerContainer.classList.remove('visible--hidden');
+    $burgerContainer.classList.toggle('visible--hidden');
     $redCircle.classList.add('visible--hidden');
   }
 
   function closeBurgerBox(e) {
-    // if ($burgerContainer.classList.contains('visible--hidden') && e.path.includes($burgerButton)) return;
-    // console.log($burgerContainer.classList);
-    // if (!$burgerContainer.classList.contains('visible--hidden') && e.path.includes($burgerButton)) {
-    //   $burgerContainer.classList.add('visible--hidden');
-    //   console.log('here');
-    // }
     if (e.path.includes($burgerButton)) return;
     if (e.path.includes($burgerContainer)) return;
     $burgerContainer.classList.add('visible--hidden');
