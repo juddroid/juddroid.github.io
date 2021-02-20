@@ -253,6 +253,11 @@ input {
   position: relative;
 }
 
+.temp--div--for--align {
+  position: relative;
+  left: -50px;
+}
+
 .location__container {
   background: #fff;
   width: 500px;
@@ -402,6 +407,7 @@ input {
   font-size: 14px;
   cursor: default;
   height: 47px;
+  vertical-align: top;
 }
 
 .calendar--table > tbody > tr > td > div {
