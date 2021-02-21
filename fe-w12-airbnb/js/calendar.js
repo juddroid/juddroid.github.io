@@ -5,6 +5,8 @@
   const $calendarWrapper = document.querySelector('.calendar__wrapper');
   const $prevBtn = document.querySelector('.calendar__prev--button-box');
   const $nextBtn = document.querySelector('.calendar__next--button-box');
+  const $checkInInput = document.querySelector('#check-in');
+  const $checkOutInput = document.querySelector('#check-out');
 
   const TODAY = new Date();
   const calendarData = {
@@ -13,6 +15,8 @@
   };
 
   const STATUS = { prev: 'prev', current: 'current', next: 'next', nextNext: 'next-next' };
+  let CALENDAR_BUTTON_COUNT = 0;
+  let PICK_DATE_COUNT = 0;
 
   // 돔 생성 (그리기)
   class CalendarBox {
@@ -27,18 +31,17 @@
     }
 
     // Title: 년 월
-    drawTitle() {
-      const calendarUpper = `
+    getTitle() {
+      return `
       <div class="calendar--upper">
         <div class="monthly--title">
         ${this.year}년 ${this.month + 1}월
         </div>
       </div>`;
-      return calendarUpper;
     }
 
     // Weekdays: 월화수목금퇼
-    drawWeekdays() {
+    getWeekdays() {
       let weekdays = `
         <div class="weekdays">
           <ul class="weekdays--ul">`;
@@ -50,7 +53,7 @@
     }
 
     // Week: 한 주
-    drawWeek() {
+    getWeek() {
       let week = `<tr>\n`;
       for (let i = 0; i < 7; i++) {
         // let boxID = `box${this.id_num}`;
@@ -76,29 +79,28 @@
       return weekLine;
     }
 
-    drawWeeks() {
-      let weekLine = this.getWeekLine();
+    getWeeks() {
+      const weekLine = this.getWeekLine();
 
       let weeks = ``;
       for (let i = 0; i < weekLine; i++) {
-        weeks += `\n${this.drawWeek()}`;
+        weeks += `\n${this.getWeek()}`;
       }
       return weeks;
     }
 
     // Days: 하루하루
-    drawDays() {
-      let days = `
+    getDays() {
+      return `
         <table class="calendar--table" role="presentation">
           <tbody>
-            ${this.drawWeeks()}
+            ${this.getWeeks()}
           </tbody>
         </table>`;
-      return days;
     }
 
     drawMonth() {
-      let status = this.status;
+      const status = this.status;
       let position = 'beforeend';
       if (status === 'prev') {
         position = 'afterbegin';
@@ -107,7 +109,7 @@
         position,
         `
         <div class="calendar__box calendar__box--${status}" id="calendar${this.year}-${this.month + 1}">
-          ${this.drawTitle() + this.drawWeekdays() + this.drawDays()}
+          ${this.getTitle() + this.getWeekdays() + this.getDays()}
         </div>`
       );
     }
@@ -134,7 +136,7 @@
       for (let i = 1; i < LASTDAY[this.monthIdx] + 1; i++) {
         monthArr.push(i);
       }
-      console.log(monthArr);
+
       return monthArr;
     }
   }
@@ -153,6 +155,8 @@
     inputMonth() {
       for (let i = 0; i < this.monthArr.length; i++) {
         this.dayDOM[i + this.day].insertAdjacentHTML('afterbegin', this.monthArr[i]);
+        this.dayDOM[i + this.day].classList.add('day-box-data');
+        this.dayDOM[i + this.day].id = `${this.month + 1}월${this.monthArr[i]}일`;
       }
     }
   }
@@ -244,7 +248,6 @@
 
     getNextNextMonth(calendarData.year, calendarData.month);
     function getNextNextMonth(currentYear, currentMonth) {
-      console.log(currentYear, currentMonth);
       if (currentMonth === 10) {
         currentMonth = 0;
         currentYear++;
@@ -254,7 +257,7 @@
       } else {
         currentMonth += 2;
       }
-      console.log(currentYear, currentMonth);
+
       const nextNextData = new CalendarData(currentYear, currentMonth);
       const nextNextBox = new CalendarBox(nextNextData.year, nextNextData.month, nextNextData.day, nextNextData.lastDay, STATUS.nextNext);
       nextNextBox.drawMonth();
@@ -264,4 +267,32 @@
   }
 
   calendarInit();
+
+  const $dayBoxData = document.querySelectorAll('.day-box-data');
+  $dayBoxData.forEach((element) => element.addEventListener('click', dayBoxPickToggle));
+
+  function pushDate(target, count) {
+    const date = target.id;
+    let input;
+    if (count === 1) input = $checkInInput;
+    if (count === 2) input = $checkOutInput;
+    input.innerHTML = date;
+  }
+
+  function dayBoxPickToggle(e) {
+    e.currentTarget.classList.toggle('day-box-data--pick');
+    e.currentTarget.classList.toggle('day-box-data');
+    // logic을 아직 완성하지 못함
+    // 보완필요!!!
+    if (PICK_DATE_COUNT === 2) {
+      return (PICK_DATE_COUNT = 0);
+    }
+    PICK_DATE_COUNT++;
+    console.log(PICK_DATE_COUNT);
+    pushDate(e.currentTarget, PICK_DATE_COUNT);
+  }
+
+  function pickCheckIn() {}
+
+  function pickCheckOut() {}
 })(window, document);
