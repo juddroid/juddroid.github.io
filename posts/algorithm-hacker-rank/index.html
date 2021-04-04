@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="en" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="theme" content="Chirpy v2.7.2"><meta name="generator" content="Jekyll v4.2.0" /><meta property="og:title" content="[Algorithm] Hacker Rank 와의 첫만남, 그리고…(feat.CodeForce)" /><meta name="author" content="Raccoon" /><meta property="og:locale" content="en_US" /><meta name="description" content="하루하루가 멘붕의 연속이다. 오늘은 Hacker Rank 라는 사이트를 처음 만나서 4문제를 풀고, Code Force 라는 곳에서 가상대회에 출전을 해본다. 어제 차마 마져 구현하지 못한 ‘카페 이벤트’ 때문에" /><meta property="og:description" content="하루하루가 멘붕의 연속이다. 오늘은 Hacker Rank 라는 사이트를 처음 만나서 4문제를 풀고, Code Force 라는 곳에서 가상대회에 출전을 해본다. 어제 차마 마져 구현하지 못한 ‘카페 이벤트’ 때문에" /><link rel="canonical" href="https://juddroid.github.io/posts/algorithm-hacker-rank/" /><meta property="og:url" content="https://juddroid.github.io/posts/algorithm-hacker-rank/" /><meta property="og:site_name" content="Raccoon" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2021-01-28T03:15:00+09:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="[Algorithm] Hacker Rank 와의 첫만남, 그리고…(feat.CodeForce)" /><meta name="google-site-verification" content="google_meta_tag_verification" /> <script type="application/ld+json"> {"description":"하루하루가 멘붕의 연속이다. 오늘은 Hacker Rank 라는 사이트를 처음 만나서 4문제를 풀고, Code Force 라는 곳에서 가상대회에 출전을 해본다. 어제 차마 마져 구현하지 못한 ‘카페 이벤트’ 때문에","url":"https://juddroid.github.io/posts/algorithm-hacker-rank/","@type":"BlogPosting","headline":"[Algorithm] Hacker Rank 와의 첫만남, 그리고…(feat.CodeForce)","dateModified":"2021-01-28T03:15:00+09:00","datePublished":"2021-01-28T03:15:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://juddroid.github.io/posts/algorithm-hacker-rank/"},"author":{"@type":"Person","name":"Raccoon"},"@context":"https://schema.org"}</script><title>[Algorithm] Hacker Rank 와의 첫만남, 그리고...(feat.CodeForce) | Raccoon</title><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon"><link rel="icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="/assets/img/favicons/apple-icon.png"><link rel="apple-touch-icon" href="/assets/img/favicons/apple-icon-precomposed.png"><link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/manifest.json"><meta name='msapplication-config' content='/assets/img/favicons/browserconfig.xml'><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="preconnect" href="cdn.jsdelivr.net"><link rel="dns-prefetch" href="cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous"><link rel="preload" href="/assets/css/post.css" as="style"><link rel="stylesheet" href="/assets/css/post.css"><link rel="preload" as="style" href="/assets/css/lib/bootstrap-toc.min.css"><link rel="stylesheet" href="/assets/css/lib/bootstrap-toc.min.css" /> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script defer src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.15.0,npm/bootstrap@4/dist/js/bootstrap.min.js"></script> <script async src="/assets/js/post.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id=G-35DGNMXRP7"></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-35DGNMXRP7'); }); </script><body data-spy="scroll" data-target="#toc"><div id="sidebar" class="d-flex flex-column align-items-end"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" alt="avatar" class="mx-auto"> <img src="/assets/img/favicons/ms-icon-310x310.png" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">Raccoon</a></div><div class="site-subtitle font-italic">Digging to the end of the Earth</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item"> <a href="/tabs/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item"> <a href="/tabs/tags/" class="nav-link"> <i class="fa-fw fas fa-tags ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item"> <a href="/tabs/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item"> <a href="/tabs/about/" class="nav-link"> <i class="fa-fw fas fa-info ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center"> <a href="https://github.com/juddroid" aria-label="github" class="order-3" target="_blank" rel="noopener"> <i class="fab fa-github-alt"></i> </a> <a href="https://instagram.com/juddroid_raccoon" aria-label="instagram" class="order-4" target="_blank" rel="noopener"> <i class="fab fa-instagram"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['nobllizdc','gmail.com'].join('@')" aria-label="email" class="order-5" > <i class="fas fa-envelope"></i> </a> <span class="icon-border order-2"></span> <span id="mode-toggle-wrapper" class="order-1"> <i class="mode-toggle fas fa-adjust"></i> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } var self = this; /* always follow the system prefers */ this.sysDarkPrefers.addListener(function() { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.updateMermaid(); }); } /* constructor() */ setDark() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_KEY); sessionStorage.removeItem(ModeToggle.MODE_KEY); } get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode == ModeToggle.DARK_MODE; } get isLightMode() { return this.mode == ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer) ) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } updateMermaid() { if (typeof mermaid !== "undefined") { let expectedTheme = (this.modeStatus === ModeToggle.DARK_MODE? "dark" : "default"); let config = { theme: expectedTheme }; /* re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */ $(".mermaid").each(function() { let svgCode = $(this).prev().children().html(); $(this).removeAttr("data-processed"); $(this).html(svgCode); }); mermaid.initialize(config); mermaid.init(undefined, ".mermaid"); } } flipMode() { if (this.hasMode) { if (this.isSysDarkPrefer) { if (this.isLightMode) { this.clearMode(); } else { this.setLight(); } } else { if (this.isDarkMode) { this.clearMode(); } else { this.setDark(); } } } else { if (this.isSysDarkPrefer) { this.setLight(); } else { this.setDark(); } } this.updateMermaid(); } /* flipMode() */ } /* ModeToggle */ let toggle = new ModeToggle(); $(".mode-toggle").click(function() { toggle.flipMode(); }); </script> </span></div></div><div id="topbar-wrapper" class="row justify-content-center topbar-down"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Posts </a> </span> <span>[Algorithm] Hacker Rank 와의 첫만남, 그리고...(feat.CodeForce)</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" placeholder="Search..."> <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="post-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>[Algorithm] Hacker Rank 와의 첫만남, 그리고...(feat.CodeForce)</h1><div class="post-meta text-muted d-flex flex-column"><div> <span class="timeago " data-toggle="tooltip" data-placement="bottom" title="Thu, Jan 28, 2021, 3:15 AM +0900" > Jan 28 <i class="unloaded">2021-01-28T03:15:00+09:00</i> </span> by <span class="author"> Raccoon </span></div><div> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="2101 words">11 min</span></div></div><div class="post-content"><p>하루하루가 멘붕의 연속이다. 오늘은 Hacker Rank 라는 사이트를 처음 만나서 4문제를 풀고, Code Force 라는 곳에서 가상대회에 출전을 해본다. 어제 차마 마져 구현하지 못한 ‘카페 이벤트’ 때문에</p><ul><li>오후 4시까지 해커랭크 문제를 다 푼다.<li>곧바로 가상대회(2시간)에 참가해서 6시 30전후로 마친다.<li>카페 이벤트 코드를 점검한다.</ul><p>오늘도 그럴싸한 계획을 세웠다.</p><p><br /> <br /></p><h2 id="어서와-hacker-rank-는-처음이지">어서와 Hacker Rank 는 처음이지?</h2><p><br /></p><h3 id="1-diagonal-difference">1. Diagonal Difference</h3><hr /><p><strong>개요</strong></p><ul><li><p>정사각형 2차원 배열이 주어진다.</p><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">sampleData</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+  <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+  <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+<span class="p">];</span>
+<span class="kd">const</span> <span class="nx">expected</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</pre></table></code></div></div><li><p>대각선으로 왼쪽부터 더하면 1 + 5 + 9 = 15</p><li><p>대각선으로 오른쪽부터 더하면 9 + 5 + 3 = 17</p><li><p>이 둘의 abs difference를 <code class="language-plaintext highlighter-rouge">return</code> 하면된다.</p></ul><p><strong>풀이</strong></p><ol><li>화려한 2중 <code class="language-plaintext highlighter-rouge">for</code> 문으로 배열의 <code class="language-plaintext highlighter-rouge">index</code> 를 구해서 오른쪽부터 <code class="language-plaintext highlighter-rouge">sum</code> 을 구한다.<li>왼쪽도 같은 방법으로 <code class="language-plaintext highlighter-rouge">sum</code> 을 구한다.<li>두 <code class="language-plaintext highlighter-rouge">sum</code> 의 차를 구해서 <code class="language-plaintext highlighter-rouge">Math.abs()</code> 한다.</ol><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+</pre><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">diagonalDifference</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 1 ---&gt;</span>
+  <span class="kd">function</span> <span class="nx">rightDiagonal</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// right</span>
+    <span class="kd">let</span> <span class="nx">rightSum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="nx">j</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]);</span>
+          <span class="nx">rightSum</span> <span class="o">+=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]);</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">rightSum</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// 2 ---&gt;</span>
+  <span class="kd">function</span> <span class="nx">leftDiagonal</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// left</span>
+    <span class="kd">let</span> <span class="nx">leftSum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">+</span> <span class="nx">j</span> <span class="o">===</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]);</span>
+          <span class="nx">leftSum</span> <span class="o">+=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]);</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">leftSum</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kd">const</span> <span class="nx">rightSum</span> <span class="o">=</span> <span class="nx">rightDiagonal</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">leftSum</span> <span class="o">=</span> <span class="nx">leftDiagonal</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
+  
+  <span class="c1">// 3 ---&gt;</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">rightSum</span> <span class="o">-</span> <span class="nx">leftSum</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p><strong>Test Code</strong></p><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">test</span><span class="p">(</span><span class="nx">sample</span><span class="p">,</span> <span class="nx">expect</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">diagonalDifference</span><span class="p">(</span><span class="nx">sample</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`result: </span><span class="p">${</span><span class="nx">result</span><span class="p">}</span><span class="s2"> , expect: </span><span class="p">${</span><span class="nx">expected</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span> <span class="o">===</span> <span class="nx">expect</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></table></code></div></div><ul><li>생각보다 코드가 지저분하고, 그에 비해 빨리 풀렸다.</ul><h3 id="2-time-conversion">2. Time Conversion</h3><hr /><p><strong>개요</strong></p><ul><li><p>시간이 <code class="language-plaintext highlighter-rouge">string</code> 으로 주어진다.</p><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">s</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">04:59:59AM</span><span class="dl">'</span><span class="p">;</span>
+</pre></table></code></div></div><li><p>아래와 같은 형식으로 바꾸면 된다.</p><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">ex</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">04:59:59</span><span class="dl">'</span><span class="p">;</span>
+</pre></table></code></div></div></ul><p><strong>풀이</strong></p><ol><li><code class="language-plaintext highlighter-rouge">string</code> 을 <code class="language-plaintext highlighter-rouge">split</code> 한 후 <code class="language-plaintext highlighter-rouge">A</code> 혹은 <code class="language-plaintext highlighter-rouge">P</code> 문자를 구한다.<li><code class="language-plaintext highlighter-rouge">slice</code> 로 시간(<code class="language-plaintext highlighter-rouge">HOUR</code>)을 구한다.<li>변경한 <code class="language-plaintext highlighter-rouge">string</code> 을 붙일 수 있도록 잘라 놓는다.<li>오전 오후인 경우 각각 12시를 기준으로 시간을 조정해주고, 24시인 경우는 예외처리 해준다.<li>변경한 시간이 일의 자리이면 <code class="language-plaintext highlighter-rouge">stirng</code> 을 붙여 줄 수 있도록 <code class="language-plaintext highlighter-rouge">zero</code> 를 만들어 놓는다.<li>모두 <code class="language-plaintext highlighter-rouge">concat</code></ol><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+</pre><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">timeConversion</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">splitString</span> <span class="o">=</span> <span class="nx">s</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+  <span class="c1">// 1 ---&gt;</span>
+  <span class="kd">let</span> <span class="nx">AP</span> <span class="o">=</span> <span class="nx">splitString</span><span class="p">[</span><span class="nx">splitString</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">2</span><span class="p">];</span>
+  <span class="c1">// 2 ---&gt;</span>
+  <span class="kd">let</span> <span class="nx">HOUR</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">splitString</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="dl">''</span><span class="p">));</span>
+	<span class="c1">// 3 ---&gt;</span>
+  <span class="kd">let</span> <span class="nx">cutArr</span> <span class="o">=</span> <span class="nx">splitString</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nx">splitString</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">2</span><span class="p">);</span>
+	
+  <span class="c1">// 4 ---&gt;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">AP</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">A</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">HOUR</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">HOUR</span> <span class="o">-=</span> <span class="mi">12</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">AP</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">P</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">HOUR</span> <span class="o">+=</span> <span class="mi">12</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">HOUR</span> <span class="o">===</span> <span class="mi">24</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">HOUR</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  
+  <span class="c1">// 5 ---&gt;</span>
+  <span class="kd">let</span> <span class="nx">zero</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">];</span>
+  <span class="kd">let</span> <span class="nx">absHOUR</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">HOUR</span><span class="p">);</span>
+
+  <span class="kd">let</span> <span class="nx">arrHOUR</span> <span class="o">=</span> <span class="nx">absHOUR</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">split</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">arrHOUR</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">arrHOUR</span> <span class="o">=</span> <span class="nx">zero</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">absHOUR</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// 6 ---&gt;</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">arrHOUR</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">cutArr</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+
+  <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p><strong>Test Code</strong></p><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">test</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span> <span class="nx">ex</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">timeConversion</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`result: </span><span class="p">${</span><span class="nx">result</span><span class="p">}</span><span class="s2">, ex: </span><span class="p">${</span><span class="nx">ex</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span> <span class="o">===</span> <span class="nx">ex</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">test</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span> <span class="nx">ex</span><span class="p">);</span>
+</pre></table></code></div></div><ul><li>처음 문제를 봤을 때보다 까다로운 조건이 몇가지 있었다.<li><code class="language-plaintext highlighter-rouge">0</code> 을 붙여줘야 한다든지 24시일 경우의 생각을 처음에는 하지 못했었다.<li>엣지케이스를 땜빵하는 형식으로 코딩을 한 것 같아 풀고도 찝찝했다.</ul><h3 id="3-number-line-jumps">3. Number Line Jumps</h3><hr /><p><strong>개요</strong></p><ul><li><p>점프하는 서커스 캥거루 두 마리가 있다.</p><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">input0</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">];</span>
+<span class="kd">const</span> <span class="nx">output0</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">YES</span><span class="dl">'</span><span class="p">;</span>
+  
+<span class="kd">const</span> <span class="nx">input1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="kd">const</span> <span class="nx">output1</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">NO</span><span class="dl">'</span><span class="p">;</span>
+</pre></table></code></div></div><li>배열에는 각 캥거루의 출발지점과 점프능력치가 나와있다.<li>캥거루들이 출발했을 때, 한 번이라도 만날 수 있는지를 말해 <code class="language-plaintext highlighter-rouge">YES</code> or <code class="language-plaintext highlighter-rouge">NO</code></ul><p><strong>풀이</strong></p><ol><li>각 캥거루 1차 함수식 작성(<code class="language-plaintext highlighter-rouge">y = ax + b</code>)<li><code class="language-plaintext highlighter-rouge">for</code> 문을 돌며 <code class="language-plaintext highlighter-rouge">i</code> 이 값을 때, 두 캥거루의 값이 일치하면 <code class="language-plaintext highlighter-rouge">return 'YES'</code></ol><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">kangaroo</span><span class="p">(</span><span class="nx">x1</span><span class="p">,</span> <span class="nx">v1</span><span class="p">,</span> <span class="nx">x2</span><span class="p">,</span> <span class="nx">v2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10000</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 1 ---&gt;</span>
+    <span class="kd">let</span> <span class="nx">kangaroo1</span> <span class="o">=</span> <span class="nx">x1</span> <span class="o">+</span> <span class="nx">v1</span> <span class="o">*</span> <span class="nx">i</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">kangaroo2</span> <span class="o">=</span> <span class="nx">x2</span> <span class="o">+</span> <span class="nx">v2</span> <span class="o">*</span> <span class="nx">i</span><span class="p">;</span>
+    <span class="c1">// 2 ---&gt;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">kangaroo1</span> <span class="o">===</span> <span class="nx">kangaroo2</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="dl">'</span><span class="s1">YES</span><span class="dl">'</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="dl">'</span><span class="s1">NO</span><span class="dl">'</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><ul><li>이런 문제만 있으면 좋겠다. 명시적이고, 깔끔한 쉬운 수학문제 같다.<li><code class="language-plaintext highlighter-rouge">for</code> 문을 얼만큼 돌려야할지 고민을 <code class="language-plaintext highlighter-rouge">1초</code> 정도 하다가 조건을 확인하고는 그냥 <code class="language-plaintext highlighter-rouge">10000</code> 번 돌린게 좀 옥의티같다.</ul><h3 id="4-save-the-prisoner">4. Save the Prisoner</h3><hr /><p><strong>개요</strong></p><ul><li><p>원탁의 죄수들의 폭탄(<code class="language-plaintext highlighter-rouge">candy</code>)돌리기</p><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="mi">5</span> <span class="mi">3</span> <span class="mi">2</span>
+<span class="mi">352926151</span> <span class="mi">380324688</span> <span class="mi">94730870</span>
+</pre></table></code></div></div><li>예시를 해석하자면 <code class="language-plaintext highlighter-rouge">5</code> 명의 죄수들이 원탁에 앉아 <code class="language-plaintext highlighter-rouge">3</code>개의 사탕을 <code class="language-plaintext highlighter-rouge">2</code> 번 의자에 앉은 사람부터 차례대로 받는다.<li>마지막에 사탕을 받는 죄수를 찾으면 된다.</ul><p><strong>풀이</strong></p><ol><li>죄수(<code class="language-plaintext highlighter-rouge">n</code>)가 사탕(<code class="language-plaintext highlighter-rouge">m</code>)보다 많을 경우와 적을 경우를 나누어서 판단<li>시작하는 자리(<code class="language-plaintext highlighter-rouge">s</code>)부터 마지막 죄수 탐색<li>원탁에 앉았으므로 한바퀴를 돌았을 때의 남은 사탕개수를 고려<li>마찬가지로 시작하는 자리로부터 사탕을 나누어주며 원탁을 돌 때, 죄수의 번호를 넘어가는 것을 고려</ol><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">saveThePrisoner</span><span class="p">(</span><span class="nx">n</span><span class="p">,</span> <span class="nx">m</span><span class="p">,</span> <span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">(</span><span class="nx">m</span> <span class="o">+</span> <span class="nx">s</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="nx">n</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nx">result</span> <span class="o">===</span> <span class="mi">0</span> <span class="p">?</span> <span class="nx">n</span> <span class="p">:</span> <span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p><strong>Test Code</strong></p><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">input</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="dl">'</span><span class="s1">./04-1-data.js</span><span class="dl">'</span><span class="p">).</span><span class="nx">toString</span><span class="p">().</span><span class="nx">split</span><span class="p">(</span><span class="dl">'</span><span class="se">\n</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">expect</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="dl">'</span><span class="s1">./04-2-expect.js</span><span class="dl">'</span><span class="p">).</span><span class="nx">toString</span><span class="p">().</span><span class="nx">split</span><span class="p">(</span><span class="dl">'</span><span class="se">\n</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">inputArr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">input</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">inputArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">input</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="dl">'</span><span class="s1"> </span><span class="dl">'</span><span class="p">));</span>
+<span class="p">}</span>
+<span class="kd">let</span> <span class="nx">expectArr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">input</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">expectArr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">expect</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">test</span><span class="p">(</span><span class="nx">input</span><span class="p">,</span> <span class="nx">expect</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">input</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">saveThePrisoner</span><span class="p">(</span><span class="nb">Number</span><span class="p">(</span><span class="nx">input</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">input</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">input</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]));</span>
+    <span class="kd">let</span> <span class="nx">expected</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">expect</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">));</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">result</span> <span class="o">===</span> <span class="nx">expected</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">i</span><span class="p">}</span><span class="s2">: </span><span class="p">${</span><span class="nx">result</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">i</span><span class="p">}</span><span class="s2">: </span><span class="p">${</span><span class="nx">expected</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span> <span class="o">===</span> <span class="nx">expected</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">test</span><span class="p">(</span><span class="nx">inputArr</span><span class="p">,</span> <span class="nx">expectArr</span><span class="p">);</span>
+</pre></table></code></div></div><ul><li><p>테스트 코드가 훨씬 긴 기이한 풀이가 되었다.</p><li><p>사실 처음에는 한 줄로 통과할 줄 알았다. (나도 드디어 한 줄로 알고리즘을 풀어보는구나 ㅠㅠ)</p><p><code class="language-plaintext highlighter-rouge">s + (m % n) - 1</code></p><li><p>물론 땡탈락</p><li><p><code class="language-plaintext highlighter-rouge">s</code> 에 대한 고려가 안되어 있다.</p><li><p>그래서 다음으로 도전한 식은</p><p><code class="language-plaintext highlighter-rouge">(m % n) + ((s - 1) % n)</code></p><ul><li>이 식을 세웠을 무렵 본의 아니게 다른 사람들의 코드를 보게 되었고,</ul><div class="language-js highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="p">(</span><span class="nx">m</span> <span class="o">+</span> <span class="nx">s</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="nx">n</span>
+</pre></table></code></div></div><ul><li><code class="language-plaintext highlighter-rouge">%n</code> 으로 묶으면 두 식이 같을 거라고 생각했다.<li>하지만 결과는 달랐다.</ul><li><p>사실 문제를 통과시켜놓고, 두 식이 어떻게 왜 다른가를 고민을 해야 했다.</p><li><p>결과적으로 <code class="language-plaintext highlighter-rouge">%</code> 는 나머지를 남겨주는 연산이라 일반 수학에서처럼 사용할 수 없다고 이해했다.</p><li><p>내가 세웠던 식은 각각 %n 으로 원탁 둘레만큼 결과값을 자른다고 해도 각각의 값이 더해지면서 다시 원탁 둘레의 길이(죄수 숫자)를 넘을 수 있다.</p></ul><p><code class="language-plaintext highlighter-rouge">Thread</code> 의 첫인상은 지렁이다.</p><p><strong>정리</strong></p><ol><li>아무리 빨리 풀면 장땡이라는 알고리즘이라지만 급하면 생각을 하기전에 <code class="language-plaintext highlighter-rouge">for</code> 문부터 돌리고 본다.<li>기본 문법을 조금 더 공부하고, 차분하게 생각해서 스트림 함수나 연산자를 사용하는 방법을 더 고민해 봐야할 것 같다.<li>이번 경우 다른 미션에 대한 스트레스가 있어서 빨리 끝내고 다시 코드를 보고 싶은 욕심이 종일 있어서 더 급했다.<li>동료들의 코드를 볼 때, 대체적으로 내 코드가 장황하고 길다. 짧다고 좋은 코드가 아니라고 하더라도 동료들만큼은 짧아도 될 것 같다. 내 코드가 너무 무식하게 길다.</ol><h2 id="어서와-code-force-는-진짜-처음이지">어서와 Code Force 는 진짜 처음이지?</h2><ul><li>미뤄야 될 것 같다. 너무 졸리다.</ul></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/digging/'>Digging</a>, <a href='/categories/algorithm/'>Algorithm</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/hacker-rank/" class="post-tag no-text-decoration" >Hacker Rank</a> <a href="/tags/code-force/" class="post-tag no-text-decoration" >Code Force</a> <a href="/tags/v8/" class="post-tag no-text-decoration" >v8</a> <a href="/tags/d8/" class="post-tag no-text-decoration" >d8</a> <a href="/tags/readline/" class="post-tag no-text-decoration" >readline</a> <a href="/tags/nodejs/" class="post-tag no-text-decoration" >nodejs</a> <a href="/tags/javascript/" class="post-tag no-text-decoration" >javascript</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="" data-toggle="tooltip" data-placement="top" title="" target="_blank" rel="noopener" aria-label=""> <i class="fa-fw "></i> </a> <i class="fa-fw fas fa-link small" onclick="copyLink()" data-toggle="tooltip" data-placement="top" title="Copy link"></i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down"><div class="access"><div id="access-lastmod" class="post"> <span>Recent Update</span><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/silent-night/">[thinkAbout] 새벽감성으로 생각정리하기</a><li><a href="/posts/front03-day5/">[Digging] 어쩌다보니 Node debugging 환경 세팅</a><li><a href="/posts/git/">[HTML/CSS] Git 기본기 연습</a><li><a href="/posts/http/">[CS] Text Browser를 만들어보자</a><li><a href="/posts/bulk-insert/">[Digging] Data 백만개 어떻게 처리하지..(feat. bulk insert)</a></ul></div><div id="access-tags"> <span>Trending Tags</span><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/database/">database</a> <a class="post-tag" href="/tags/dns/">dns</a> <a class="post-tag" href="/tags/domain/">domain</a> <a class="post-tag" href="/tags/http/">http</a> <a class="post-tag" href="/tags/mysql/">mysql</a> <a class="post-tag" href="/tags/register/">register</a> <a class="post-tag" href="/tags/socket/">socket</a> <a class="post-tag" href="/tags/tcp/">tcp</a> <a class="post-tag" href="/tags/udp/">udp</a> <a class="post-tag" href="/tags/wire-shark/">wire shark</a></div></div></div><div id="toc-wrapper" class="pl-0 pr-4 mb-5"> <span class="pl-3 pt-2 mb-2">Contents</span><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/algorithm-programmers-crain-dol/"><div class="card-body"> <span class="timeago small" > Jan 20 <i class="unloaded">2021-01-20T20:00:00+09:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>[Algorithm] 다시 풀어보는 알고리즘(feat. 프로그래머스)</h3><div class="text-muted small"><p> 다시 풀어보는 알고리즘(feat. 프로그래머스) 그 동안 정신없이 달려왔지만 작성한 코드를 돌아보는 시간도 풀었던 문제를 다시 풀어보는 시간도 거의 없었다. 오늘은 마침 프로그래머스에서 풀었던 문제를 다시 풀어볼 기회가 생겼다. 지난 번에 작성한 코드와 비교해보면 그 동안 얼마나 생각과 코드가 달라졌는지 비교해 볼 수도 있는 좋은 기회가 될 것 ...</p></div></div></a></div><div class="card"> <a href="/posts/bulk-insert/"><div class="card-body"> <span class="timeago small" > Feb 1 <i class="unloaded">2021-02-01T05:06:00+09:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>[Digging] Data 백만개 어떻게 처리하지..(feat. bulk insert)</h3><div class="text-muted small"><p> Data 백만개 어떻게 처리하지..(feat. bulk insert) 며칠전 이런 어줍잖은 progress bar 를 만들고, 기괴한 코드를 짜놓고, 그래도 백만개의 데이터가 db 에 들어간다고 좋아했었다. 하지만 db 의 세상에서 data 백만개는 일도 아니라는데, 저 굼벵이를 10여분간 흐뭇하게 바라보고 있어야 한다는게 영 찝찝...</p></div></div></a></div><div class="card"> <a href="/posts/docker/"><div class="card-body"> <span class="timeago small" > Feb 1 <i class="unloaded">2021-02-01T05:10:00+09:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>[CS] 도커(Docker)와의 조우, 그리고 mySQL</h3><div class="text-muted small"><p> 도커(Docker)와의 조우, 그리고 mySQL VS Code 익스텐션으로 처음만난 친구다. 이름도 외모도 귀엽게 생겨서 설치는 했는데 어떻게 쓰는줄을 몰라서 무용지물이었다. 초보를 위한 도커 안내서 - 도커란 무엇인가? 가장 쉽게 배우는 도커 위에 글은 링크에 링크가 있고, 아래 유튭 영상이 개념상 이해할만 했다. 그러니까 이해한대로 요약해...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/process/" class="btn btn-outline-primary"><p>[CS] 드디어 Process & Thread 시뮬레이션 해보기</p></a> <a href="/posts/bulk-insert/" class="btn btn-outline-primary"><p>[Digging] Data 백만개 어떻게 처리하지..(feat. bulk insert)</p></a></div><div id="disqus" class="pt-2 pb-2"><p class="font-italic text-center text-muted small"> Comments powered by <a href="https://disqus.com/">Disqus</a>.</p></div><script src="/assets/js/lib/jquery.disqusloader.min.js"></script> <script> var options = { scriptUrl: '//digging-raccoon.disqus.com/embed.js', disqusConfig: function() { this.page.url = 'https://juddroid.github.io/posts/algorithm-hacker-rank/'; this.page.identifier = '/posts/algorithm-hacker-rank/'; } }; $.disqusLoader('#disqus', options); </script></div></div></div><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center"><div class="footer-left"><p class="mb-0"> © 2021 <a href="https://github.com/juddroid">Raccoon</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0"> Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy/" target="_blank" rel="noopener">Chirpy</a> theme.</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-xl-11 post-content"><div id="search-hints"><h4 class="text-muted mb-4">Trending Tags</h4><a class="post-tag" href="/tags/database/">database</a> <a class="post-tag" href="/tags/dns/">dns</a> <a class="post-tag" href="/tags/domain/">domain</a> <a class="post-tag" href="/tags/http/">http</a> <a class="post-tag" href="/tags/mysql/">mysql</a> <a class="post-tag" href="/tags/register/">register</a> <a class="post-tag" href="/tags/socket/">socket</a> <a class="post-tag" href="/tags/tcp/">tcp</a> <a class="post-tag" href="/tags/udp/">udp</a> <a class="post-tag" href="/tags/wire-shark/">wire shark</a></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.3/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="https://juddroid.github.io{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"><div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>{categories}</div><div><i class="fa fa-tag fa-fw"></i>{tags}</div></div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No result founds.</p>' }); </script> <script defer src="https://www.googletagmanager.com/gtag/js?id=G-35DGNMXRP7"></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-35DGNMXRP7'); }); </script>

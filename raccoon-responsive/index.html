@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Raccoon</title>
+
+    <meta name="author" content="RACCOON" />
+    <meta name="description" content="Diving Digging Raccoon" />
+
+    <!-- Setting for responsive -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimun-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- og: open graph 외부에 제공할 정보를 정의할 수 있음 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Raccoon" />
+    <meta property="og:description" content="Diving Digging Raccoon" />
+    <!-- 추가해야됨 -->
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+
+    <!-- Google Fonts 적용 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Reset.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Media query 적용 -->
+    <link
+      rel="stylesheet"
+      media="(max-width: 1024px)"
+      href="css/main_medium.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(max-width: 768px)"
+      href="css/main_small.css"
+    />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="body__container">
+      <!-- HEADER -->
+      <header class="section">
+        <div class="inner clearfix">
+          <div class="menu-group float--left">
+            <div class="logo">
+              <a href="#">Raccoon</a>
+            </div>
+            <ul class="main-menu toggle">
+              <li><a href="#">Personal</a></li>
+              <li><a href="#">Open source</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Explore</a></li>
+            </ul>
+          </div>
+          <div class="mode-group float--right toggle">
+            <div class="btn-group">
+              <a href="#" class="btn light-mode">Light</a>
+              <a href="#" class="btn btn--primary dark-mode">Dark</a>
+            </div>
+            <form id="search-form" method="POST" action="">
+              <input
+                type="text"
+                id="search"
+                class="input--text"
+                placeholder="Search Raccoon"
+              />
+              <input type="submit" value="Submit" />
+            </form>
+            <ul class="sub-menu">
+              <li><a href="#">Post</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Fun</a></li>
+            </ul>
+          </div>
+          <!-- 화면에는 보이지 않는 일종의 대체 텍스트: 인덴트로 날려버린다 -->
+          <div id="toggle-btn">Header Menu Toggle Button</div>
+        </div>
+      </header>
+
+      <!-- VISUAL -->
+      <section class="section section--visual">
+        <div class="inner">
+          <div class="summary">
+            <h2 class="summary__title">그대 내 품에</h2>
+            <p class="summary__description">
+              <!-- br태그로 줄바꿈 하지 않고, paragraph를 묶어주는 방법으로 줄바꿈한다. -->
+              <!-- 그런데 왜 한글은 안될까... -->
+              별 헤는 밤이면 들려오는 그대의 음성<br />하얗게 부서지는 꽃가루
+              되어 그대 꽃위에 앉고 싶어라<br />밤하늘 보면서 느껴보는 그대의
+              숨결<br />두둥실 떠가는 쪽배를 타고 그대 호수에 머물고 싶어라
+            </p>
+          </div>
+          <form method="POST" id="sign-form" action="">
+            <ul>
+              <li>
+                <input
+                  type="text"
+                  class="input--text"
+                  placeholder="Pick a name"
+                />
+              </li>
+              <li>
+                <input
+                  type="email"
+                  class="input--text"
+                  placeholder="Your email address"
+                />
+              </li>
+              <li>
+                <input
+                  type="password"
+                  class="input--text"
+                  placeholder="Create a password"
+                />
+                <p class="caption">
+                  Use at least one letter, one numeral, and seven characters.
+                </p>
+              </li>
+              <li>
+                <button type="submit" class="btn btn--primary">
+                  Sign up for Raccoon
+                </button>
+                <p class="caption">
+                  By clicking "Sign up for Raccoon", you agree to our terms of
+                  service and privacy policy. We'll occasionally send you
+                  account related emails.
+                </p>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+
+      <!-- FEATURE -->
+      <section class="section section--feature">
+        <div class="summary">
+          <h2 class="summary__title">Let's dive!</h2>
+          <p class="summary__description">
+            Endless sky, Deep sea, Digging to the end of the Earth with Raccoon!
+          </p>
+        </div>
+        <div class="video">
+          <div class="video-ratio">
+            <iframe
+              width="1905"
+              height="800"
+              src="https://www.youtube.com/embed/258cuifjPwY"
+            ></iframe>
+          </div>
+        </div>
+        <div class="tiles">
+          <div class="inner">
+            <ul class="clearfix">
+              <li>
+                <img
+                  src="https://user-images.githubusercontent.com/70361152/107884897-a1e72b00-6f3a-11eb-9504-7723eae9225d.jpg"
+                  alt="hanriver"
+                />
+                <h3>응봉산 팔각정</h3>
+                <p>사진 찍기가 좋아</p>
+              </li>
+              <li>
+                <img
+                  src="https://user-images.githubusercontent.com/70361152/107884893-a01d6780-6f3a-11eb-9be0-ccd1fc73d247.jpg"
+                  alt="sky"
+                />
+                <h3>밤하늘의 별</h3>
+                <p>밤하늘이 좋아</p>
+              </li>
+              <li>
+                <img
+                  src="https://user-images.githubusercontent.com/70361152/107884902-a3b0ee80-6f3a-11eb-8914-b1edc99bbe4c.jpg"
+                  alt="jeju"
+                />
+                <h3>제주도 바다</h3>
+                <p>바다가 좋아</p>
+              </li>
+              <li>
+                <img
+                  src="https://user-images.githubusercontent.com/70361152/107884899-a27fc180-6f3a-11eb-9b49-cbc1a67b4cb1.JPG"
+                  alt="raccoon"
+                />
+                <h3>판단판담 섬</h3>
+                <p>여행이 좋아</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHERE IS -->
+      <section class="section section--where-is">
+        <div class="inner">
+          <div class="summary">
+            <div class="summary__title">What is Lorem Ipsum?</div>
+            <div class="summary__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </div>
+          </div>
+
+          <div id="map"></div>
+        </div>
+      </section>
+
+      <!-- Pricing Card -->
+      <section class="section section--pricing">
+        <div class="inner">
+          <div class="card">
+            <div class="cell cell--button">
+              <a href="#" class="btn btn--primary">Sign up for Raccoon</a>
+            </div>
+            <div class="cell cell--description">
+              Public projects are always free. Work together across unlimited
+              private repositories for $7 / month.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <!-- 구성은 HTML로, 순서는 CSS로 -->
+      <footer class="section">
+        <div class="inner clearfix">
+          <ul class="site-links float--right">
+            <li><a href="#">Contact Raccoon</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+
+          <ul class="site-links float--left">
+            <li>© 2021 Raccoon, Dig.</li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+
+          <ul class="site-links">
+            <li></li>
+          </ul>
+
+          <a href="#" class="logo">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="24"
+              height="24"
+              viewBox="0 0 16 16"
+              fill="#ccc"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function initMap() {
+        const myLatLng = {
+          lat: 37.782293,
+          lng: -122.39124,
+        };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          scrollwheel: false,
+          zoom: 18,
+        });
+        const marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "Raccoon",
+        });
+      }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
